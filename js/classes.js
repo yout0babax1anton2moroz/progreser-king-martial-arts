@@ -163,4 +163,15 @@ class EvilRequirement extends Requirement {
     getCondition(requirement) {
         return gameData.evil >= requirement.requirement
     }    
-  }
+}
+
+class EssenceRequirement extends Requirement {
+    constructor(elements, requirements) {
+        super(elements, requirements)
+        this.type = "essence"
+    }
+
+    getCondition(requirement) {
+        return gameData.essence >= requirement.requirement
+    }    
+}
