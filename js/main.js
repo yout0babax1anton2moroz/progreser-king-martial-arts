@@ -98,8 +98,8 @@ const skillBaseData = {
 
     "martial student": {name: "martial student", maxXp: 10000, effect: 1, description: "All XP"},
     "fighting warrior": {name: "fighting warrior", maxXp: 10000000, effect: 10, description: "All XP"},
-    "martial arts master" {name: "martial arts master", maxXp: 100000000000, effect: 100, description: "All XP"},
-    "Great martial arts master" {name: "Great martial arts master", maxXp: 1000000000000000, effect: 10000, description: "All XP"},
+    "martial arts master" : {name: "martial arts master", maxXp: 100000000000, effect: 100, description: "All XP"},
+    "Great martial arts master": {name: "Great martial arts master", maxXp: 1000000000000000, effect: 10000, description: "All XP"},
 
     "Mana Control": {name: "Mana Control", maxXp: 100, effect: 0.01, description: "T.A.A. XP"},
     "Life Essence": {name: "Life Essence", maxXp: 100, effect: 0.01, description: "Longer Lifespan"},
@@ -288,6 +288,8 @@ const tooltips = {
     //martial kingrom
     "martial student" : " start martial puts.",
     "fighting warrior" :"The second stage of the combat path is 10 times stronger than a student",
+    "martial arts master": "The second stage of the combat path is 10 times stronger fighting warrior "
+    "Great martial arts master": "The second stage of the combat path is 100 times stronger martial arts master  "
 
     //Magic
     "Mana Control": "Strengthen your mana channels throughout your body, aiding you in becoming a more powerful magical user.",
