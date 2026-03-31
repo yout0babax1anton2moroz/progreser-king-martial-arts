@@ -286,10 +286,10 @@ const tooltips = {
     "Muscle Memory": "Strengthen your neurons through habit and repetition, improving strength gains throughout the body.",
 
     //martial kingrom
-    "martial student" : " start martial puts.",
-    "fighting warrior" :"The second stage of the combat path is 10 times stronger than a student",
-    "martial arts master": "The second stage of the combat path is 10 times stronger fighting warrior",
-    "Great martial arts master": "The second stage of the combat path is 100 times stronger martial arts master",
+    "martial student" : "start martial puts.",
+    "fighting warrior" : "The second stage of the combat path is 10 times stronger than a student.",
+    "martial arts master": "The second stage of the combat path is 10 times stronger fighting warrior.",
+    "Great martial arts master": "The second stage of the combat path is 100 times stronger martial arts master.",
 
     //Magic
     "Mana Control": "Strengthen your mana channels throughout your body, aiding you in becoming a more powerful magical user.",
