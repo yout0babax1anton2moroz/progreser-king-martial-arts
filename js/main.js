@@ -98,6 +98,8 @@ const skillBaseData = {
 
     "martial student": {name: "martial student", maxXp: 10000, effect: 1, description: "All XP"},
     "fighting warrior": {name: "fighting warrior", maxXp: 10000000, effect: 10, description: "All XP"},
+    "martial arts master" {name: "martial arts master", maxXp: 100000000000, effect: 100, description: "All XP"},
+    "Great martial arts master" {name: "Great martial arts master", maxXp: 1000000000000000, effect: 10000, description: "All XP"},
 
     "Mana Control": {name: "Mana Control", maxXp: 100, effect: 0.01, description: "T.A.A. XP"},
     "Life Essence": {name: "Life Essence", maxXp: 100, effect: 0.01, description: "Longer Lifespan"},
@@ -193,7 +195,7 @@ const jobCategories = {
 const skillCategories = {
     "Fundamentals"           : ["Concentration", "Productivity", "Bargaining", "Meditation"],
     "Combat"                 : ["Strength", "Battle Tactics", "Muscle Memory"],
-    "martial kingrom"        : ["martial student", "fighting warrior"],
+    "martial kingrom"        : ["martial student", "fighting warrior","martial arts master","Great martial arts master"],
     "Magic"                  : ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension", "All Seeing Eye", "Brainwashing"],
     "Dark Magic"             : ["Dark Influence", "Evil Control", "Intimidation", "Demon Training", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop", "Evil Incarnate"],
     "Void Manipulation"      : ["Absolute Wish", "Void Amplification", "Mind Seize", "Ceaseless Abyss", "Void Symbiosis", "Void Embodiment", "Abyss Manipulation"],
@@ -397,6 +399,8 @@ function addMultipliers() {
         task.xpMultipliers.push(getHappiness)
         task.xpMultipliers.push(getBindedTaskEffect("martial student"))
         task.xpMultipliers.push(getBindedTaskEffect("fighting warrior"))
+        task.xpMultipliers.push(getBindedTaskEffect("martial arts master"))
+        task.xpMultipliers.push(getBindedTaskEffect("Great martial arts master"))
         task.xpMultipliers.push(getBindedTaskEffect("Dark Influence"))
         task.xpMultipliers.push(getBindedTaskEffect("Demon Training"))
         task.xpMultipliers.push(getBindedTaskEffect("Void Influence"))
@@ -1554,7 +1558,9 @@ gameData.requirements = {
     //martial kingrom
     "martial student": new TaskRequirement([getTaskElement("martial student")], [{task: "Strength", requirement: 50}]),
     "fighting warrior":  new TaskRequirement([getTaskElement("fighting warrior")], [{task: "martial student", requirement: 10}]),
-
+    "martial arts master":  new TaskRequirement([getTaskElement("martial arts master")], [{task: "fighting warrior", requirement: 10}]),
+    "Great martial arts master":  new TaskRequirement([getTaskElement("Great martial arts master")], [{task: "martial arts master", requirement: 10}]),
+   
     //Magic
     "Mana Control": new TaskRequirement([getTaskElement("Mana Control")], [{task: "Concentration", requirement: 200}, {task: "Meditation", requirement: 200}]),
     "Life Essence": new TaskRequirement([getTaskElement("Life Essence")], [{task: "Apprentice Mage", requirement: 10}]),
