@@ -195,7 +195,7 @@ const jobCategories = {
 const skillCategories = {
     "Fundamentals"           : ["Concentration", "Productivity", "Bargaining", "Meditation"],
     "Combat"                 : ["Strength", "Battle Tactics", "Muscle Memory"],
-    "martial kingrom"        : ["martial student", "fighting warrior", "martial arts master", "Great martial arts master"],
+    "martial kingrom"        : ["martial student", "fighting warrior","martial arts master","Great martial arts master"],
     "Magic"                  : ["Mana Control", "Life Essence", "Time Warping", "Astral Body", "Temporal Dimension", "All Seeing Eye", "Brainwashing"],
     "Dark Magic"             : ["Dark Influence", "Evil Control", "Intimidation", "Demon Training", "Blood Meditation", "Demon's Wealth", "Dark Knowledge", "Void Influence", "Time Loop", "Evil Incarnate"],
     "Void Manipulation"      : ["Absolute Wish", "Void Amplification", "Mind Seize", "Ceaseless Abyss", "Void Symbiosis", "Void Embodiment", "Abyss Manipulation"],
