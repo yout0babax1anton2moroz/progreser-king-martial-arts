@@ -1467,7 +1467,7 @@ gameData.currentMisc = []
 
 gameData.requirements = {
     //Other
-    "martial kingrom":  new TaskRequirement (getElementsByClass("martial kingrom"), [{task: "Strength", requirement: 50}),
+    "martial kingrom":  new TaskRequirement (getElementsByClass("martial kingrom"), [{task: "Strength", requirement: 50}]),
     "The Arcane Association": new TaskRequirement(getElementsByClass("The Arcane Association"), [{task: "Concentration", requirement: 200}, {task: "Meditation", requirement: 200}]),
     "Galactic Council": new AgeRequirement(getElementsByClass("Galactic Council"), [{requirement: 10000}]),
     "The Void": new AgeRequirement(getElementsByClass("The Void"), [{requirement: 1000}]),
@@ -1553,7 +1553,7 @@ gameData.requirements = {
 
     //martial kingrom
     "martial student": new TaskRequirement([getTaskElement("martial student")], [{task: "Strength", requirement: 50}]),
-    "fighting warrior": : new TaskRequirement([getTaskElement("fighting warrior")], [{task: "martial student", requirement: 10}]),
+    "fighting warrior":  new TaskRequirement([getTaskElement("fighting warrior")], [{task: "martial student", requirement: 10}]),
 
     //Magic
     "Mana Control": new TaskRequirement([getTaskElement("Mana Control")], [{task: "Concentration", requirement: 200}, {task: "Meditation", requirement: 200}]),
