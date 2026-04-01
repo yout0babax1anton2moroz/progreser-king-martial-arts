@@ -291,6 +291,7 @@ const tooltips = {
     "martial arts master": "The second stage of the combat path is 10 times stronger fighting warrior.",
     "Great martial arts master": "The second stage of the combat path is 100 times stronger martial arts master."
     
+    
     //Magic
     "Mana Control": "Strengthen your mana channels throughout your body, aiding you in becoming a more powerful magical user.",
     "Life Essence": "Lengthen your lifespan through the means of magic. However, is this truly the immortality you have tried seeking for...?",
